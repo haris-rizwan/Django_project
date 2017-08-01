@@ -1,0 +1,22 @@
+h1 {
+  font-family: "Arial";
+}
+
+p {
+  font-family: monospace;
+}
+
+body{
+  font-size: 10px;
+}
+
+#two{
+  font-size: 2em;
+}
+
+p {
+  font-style: italic;
+}
+ h1 {
+   font-weight: lighter;
+ }

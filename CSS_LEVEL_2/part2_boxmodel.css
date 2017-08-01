@@ -1,0 +1,12 @@
+#one{
+  border: 4px solid red;
+  width: 25%;
+  /*top right bottom left*/
+
+  margin: 20px 100px 40px 60px;
+}
+#two{
+  border: 4px solid green;
+  text-align: center;
+  padding: 150px
+}

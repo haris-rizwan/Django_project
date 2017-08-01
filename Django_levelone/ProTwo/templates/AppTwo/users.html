@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Django Framework</title>
+  </head>
+  <body>
+        <h1>Here are your Users</h1>
+
+        <div class="django">
+          {% if userData %}
+          {%for data in userData%}
+          <!-- {{forloop.counter }} {# starting index 1 #} -->
+
+
+          <!-- <ol> -->
+           {{forloop.counter }} {# starting index 1 #}. User Info
+            <ul>
+              <li>First Name : {{data.First_Name}}</li>
+              <li>Last Name : {{data.Last_Name}}</li>
+              <li>Email : {{data.Email}}</li>
+            </ul></li>
+
+          <!-- </ol> -->
+          {% endfor %}
+
+          {% else %}
+          <p>The data is not available</p>
+
+          {% endif %}
+
+        </div>
+
+  </body>
+</html>

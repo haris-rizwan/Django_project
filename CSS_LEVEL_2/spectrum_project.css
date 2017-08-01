@@ -1,0 +1,43 @@
+ p{
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+table{
+  /* margin-left: 180px; */
+  margin: 0 auto;
+  /*width: 600px*/
+  border-collapse: separate;
+  border-spacing: 10px;
+
+}
+
+ #one{
+background-color: #3F2C7A;
+width: 150px;
+height: 300px;
+}
+#two{
+  background-color: #605EA5;
+  width: 150px;
+  height: 300px;
+
+}
+#three{
+  background-color: #D64D6A;
+  width: 150px;
+  height: 300px;
+}
+
+#four{
+  background-color: #EA9456;
+  width: 150px;
+  height: 300px;
+}
+
+#five{
+  background-color: #B6D6A0;
+  width: 150px;
+  height: 300px;
+}

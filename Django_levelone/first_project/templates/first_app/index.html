@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Django Framwork App</title>
+    <link rel="stylesheet" href="{% static "firstapp/Css/firstapp.css" %}">
+  </head>
+  <body>
+
+    <h1>Hi this is index.html</h1>
+    {{insert_me}}
+
+    <h2>The follwoing picture was added by using static file</h2>
+    <img src="{% static "firstapp/images/V12-Vantage.jpg" %}" alt="uh oh sorry">
+
+
+
+
+    <div class="django">
+      {% if webdata %}
+      <table>
+        <thead>
+          <th>TOPIC</th>
+          <th>NAME</th>
+          <th>URL</th>
+        </thead>
+        {% for data in webdata %}
+        <tr>
+          <td>{{data.topic}}</td>
+          <td>{{data.name}}</td>
+          <td>{{data.url}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% else %}
+      <p>The data is not available</p>
+
+      {% endif %}
+
+
+    </div>
+
+
+
+
+  </body>
+</html>
